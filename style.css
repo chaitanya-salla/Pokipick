@@ -31,6 +31,35 @@ a:visited {
   color: inherit;
 }
 
+.search-bar {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  flex: 1;
+  outline: none;
+  height: 20px;
+  padding: 12px 12px;
+}
+
+
+.search-bar button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .poke-container {
   display: flex;
   flex-wrap: wrap;
