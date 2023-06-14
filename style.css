@@ -76,6 +76,11 @@ a:visited {
   margin: 10px;
   padding: 20px;
   text-align: center;
+  transition: 0.4s ease;
+}
+
+.pokemon:hover {
+  transform: scale(1.1);
 }
 
 .pokemon .img-container { 
