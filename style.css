@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,14 +7,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #C4DFDF;
+  background-color: #c4dfdf;
 }
-
 
 h1 {
   letter-spacing: 3px;
@@ -52,7 +50,6 @@ a:visited {
   padding: 12px 12px;
 }
 
-
 .search-bar button {
   background-color: transparent;
   outline: none;
@@ -77,13 +74,14 @@ a:visited {
   padding: 20px;
   text-align: center;
   transition: 0.4s ease;
+  cursor: pointer;
 }
 
 .pokemon:hover {
   transform: scale(1.1);
 }
 
-.pokemon .img-container { 
+.pokemon .img-container {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   width: 120px;
@@ -101,13 +99,55 @@ a:visited {
 }
 
 .pokemon .info .number {
-  background-color: rgba(0,0,0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 0.8rem;
 }
 
-.pokemon .info  .name {
+.pokemon .info .name {
   margin: 15px 0 7px;
   letter-spacing: 1px;
+}
+
+dialog {
+  height: 80%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container > div {
+  padding: 1rem;
+}
+
+.stats {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+.poki-image {
+  width: 60%;
 }
